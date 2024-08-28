@@ -14,7 +14,7 @@ This is a casual project created to test out the capabilities of the OpenAI API,
 [![Twitter Follow](https://img.shields.io/twitter/follow/TechTributes?style=social)](https://twitter.com/TechTributes)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ashrithssreddy/TechTributes/issues)
 
-![TechTributes Logo](images/logo.jpg)
+![TechTributes Logo](img/logo.jpg)
 
 ## Features
 
