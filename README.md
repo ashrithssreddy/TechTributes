@@ -2,6 +2,8 @@
 
 **TechTributes** is a Twitter bot that posts daily AI-generated poems celebrating influential figures in technology.
 
+[![Twitter Bot](https://img.shields.io/badge/Twitter%20Bot-Live-blue)](https://twitter.com/TechTributes)
+
 ## Features
 
 - **Automated Poem Generation:** Uses the OpenAI API to generate creative poems about tech visionaries.
@@ -49,5 +51,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Contact
 
-For questions or suggestions, feel free to reach out.
-
+Feel free to reach out if you have any questions or suggestions:
+- **[Ashrith R](https://www.linkedin.com/in/ashrithssreddy/)**
