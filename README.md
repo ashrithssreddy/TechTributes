@@ -9,10 +9,6 @@
 [![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/ashrithssreddy/TechTributes)
 [![OpenAI Powered](https://img.shields.io/badge/OpenAI-Powered-blue)](https://openai.com/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/TechTributes?style=social)](https://twitter.com/TechTributes)
-[![GitHub issues](https://img.shields.io/github/issues/ashrithssreddy/TechTributes)](https://github.com/ashrithssreddy/TechTributes/issues)
-[![GitHub forks](https://img.shields.io/github/forks/ashrithssreddy/TechTributes)](https://github.com/ashrithssreddy/TechTributes/network)
-[![GitHub stars](https://img.shields.io/github/stars/ashrithssreddy/TechTributes)](https://github.com/ashrithssreddy/TechTributes/stargazers)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/YOUR_PROJECT_ID)](https://www.codacy.com/gh/ashrithssreddy/TechTributes/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ashrithssreddy/TechTributes&amp;utm_campaign=Badge_Grade)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ashrithssreddy/TechTributes/issues)
 
 
