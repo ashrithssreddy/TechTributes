@@ -62,6 +62,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Contact
-
-Feel free to reach out if you have any questions or suggestions:
-- **[Ashrith R](https://www.linkedin.com/in/ashrithssreddy/)**
+- Feel free to reach out if you have any questions or suggestions:
+- **[LinkedIn](https://www.linkedin.com/in/ashrithssreddy/)**
+- **[Twitter](https://www.x.com/ashrithssreddy/)**
