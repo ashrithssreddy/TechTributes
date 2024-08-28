@@ -2,6 +2,9 @@
 
 **TechTributes** is a Twitter bot that posts daily AI-generated poems celebrating influential figures in technology.
 
+## About This Repository
+This is a casual project created to test out the capabilities of the OpenAI API, experiment with building a Twitter bot, and run some creative juices. It’s a fun way to blend technology with creativity, and explore the intersection of AI and art.
+
 [![Twitter Bot](https://img.shields.io/badge/Twitter%20Bot-Live-blue)](https://twitter.com/TechTributes)
 [![Project Status](https://img.shields.io/badge/Project%20Status-In%20Progress-green)](https://github.com/ashrithssreddy/TechTributes)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -11,6 +14,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/TechTributes?style=social)](https://twitter.com/TechTributes)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ashrithssreddy/TechTributes/issues)
 
+![TechTributes Logo](images/logo.jpg)
 
 ## Features
 
