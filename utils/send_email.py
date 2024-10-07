@@ -1,8 +1,9 @@
 import smtplib
 import yaml
+import pandas as pd
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-import base64
+from email.mime.image import MIMEImage
 
 # Load configuration from config.yaml
 with open('config/config.yaml', 'r') as file:
@@ -13,35 +14,40 @@ email_sender = config['gmail']['email_sender']
 email_password = config['gmail']['email_password']
 email_receiver = config['gmail']['email_receiver']
 
-# Create the email content
-## Include df optionally
-import pandas as pd
+# Create a sample DataFrame
 data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [24, 30, 22]}
 df = pd.DataFrame(data)
 
-## Include image optionally
-with open('img/logo.jpg', 'rb') as img_file:
-    image_data = img_file.read()
-    image_base64 = base64.b64encode(image_data).decode('utf-8')
-
-subject = "Test Email"
-body = f"""
+# Create the email content
+subject = "Test Email with DataFrame and Image"
+html_body = f"""
 <html>
 <head></head>
 <body>
     <h2>This is a test email</h2>
+    
     {df.to_html(index=False)}
-    <img src="data:image/jpeg;base64,{image_base64}" alt="Embedded Image"/>
+    
+    <img src="cid:image1" alt="Embedded Image"/>
 </body>
 </html>
 """
 
 # Create the email message
-msg = MIMEMultipart('alternative')
+msg = MIMEMultipart('related')
 msg['From'] = email_sender
 msg['To'] = email_receiver
 msg['Subject'] = subject
-msg.attach(MIMEText(body, 'html')) # 'plain'
+
+# Attach the HTML content
+msg_html = MIMEText(html_body, 'html')
+msg.attach(msg_html)
+
+# Attach the image, optionally
+with open('img/logo.jpg', 'rb') as img_file:
+    img = MIMEImage(img_file.read())
+    img.add_header('Content-ID', '<image1>')
+    msg.attach(img)
 
 # Send the email using Gmail's SMTP server
 try:
