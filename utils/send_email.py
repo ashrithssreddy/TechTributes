@@ -13,15 +13,35 @@ email_password = config['gmail']['email_password']
 email_receiver = config['gmail']['email_receiver']
 
 # Create the email content
+## Include df optionally
+import pandas as pd
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [24, 30, 22]}
+df = pd.DataFrame(data)
+html_table = df.to_html(index=False)
+
+## Include image optionally
+with open('img/logo.jpg', 'rb') as img_file:
+    image_data = img_file.read()
+    image_base64 = base64.b64encode(image_data).decode('utf-8')
+
 subject = "Test Email"
-body = "This is a test email sent using Python and the configuration file."
+body = f"""
+<html>
+<head></head>
+<body>
+    <h2>This is a test email</h2>
+    {html_table}
+    <img src="data:image/jpeg;base64,{image_base64}" alt="Embedded Image"/>
+</body>
+</html>
+"""
 
 # Create the email message
-msg = MIMEMultipart()
+msg = MIMEMultipart('alternative')
 msg['From'] = email_sender
 msg['To'] = email_receiver
 msg['Subject'] = subject
-msg.attach(MIMEText(body, 'plain'))
+msg.attach(MIMEText(body, 'html')) # 'plain'
 
 # Send the email using Gmail's SMTP server
 try:
