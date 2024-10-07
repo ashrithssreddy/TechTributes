@@ -25,7 +25,7 @@ def send_email(subject = "", body = ""):
     <html>
     <head></head>
     <body>
-        <h2>This is a test email</h2>
+    {body}
     </body>
     </html>
     """

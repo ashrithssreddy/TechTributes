@@ -16,6 +16,7 @@ def main():
 
     if poem:
         # post_tweet(poem)
+        send_email(subject = "TechTributes", body = poem)
         print("Tweet posted successfully!")
     else:
         print("Failed to generate a poem.")
