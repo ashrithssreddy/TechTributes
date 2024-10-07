@@ -1,4 +1,6 @@
 openai==0.28.0
 tweepy
-schedule
 pyyaml
+pandas
+smtplib
+email

@@ -5,8 +5,8 @@
 # import yaml
 # import os
 # os.chdir('/Users/ashrithreddy/Documents/TechTributes')
-from utils.poem_generator import generate_poem
-from scripts.post_tweet import post_tweet
+from poem_generator import generate_poem
+from post_tweet import post_tweet
 
 def main():
     prompt = "write a poem about Elon Musk and his contribution to tech world"
