@@ -2,6 +2,7 @@ import smtplib
 import yaml
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+import base64
 
 # Load configuration from config.yaml
 with open('config/config.yaml', 'r') as file:
@@ -17,7 +18,6 @@ email_receiver = config['gmail']['email_receiver']
 import pandas as pd
 data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [24, 30, 22]}
 df = pd.DataFrame(data)
-html_table = df.to_html(index=False)
 
 ## Include image optionally
 with open('img/logo.jpg', 'rb') as img_file:
@@ -30,7 +30,7 @@ body = f"""
 <head></head>
 <body>
     <h2>This is a test email</h2>
-    {html_table}
+    {df.to_html(index=False)}
     <img src="data:image/jpeg;base64,{image_base64}" alt="Embedded Image"/>
 </body>
 </html>
