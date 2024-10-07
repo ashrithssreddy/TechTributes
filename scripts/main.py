@@ -1,11 +1,18 @@
 # scripts/main.py
 
+# import tweepy
+# import openai
+# import yaml
+# import os
+# os.chdir('/Users/ashrithreddy/Documents/TechTributes')
 from utils.poem_generator import generate_poem
 from scripts.post_tweet import post_tweet
 
 def main():
     prompt = "write a poem about Elon Musk and his contribution to tech world"
     poem = generate_poem(prompt)
+    poem = f'{poem} \n\n@elonmusk'
+    print(poem)
 
     if poem:
         post_tweet(poem)
