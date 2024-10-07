@@ -55,6 +55,6 @@ try:
         server.starttls()  # Secure the connection
         server.login(email_sender, email_password)
         server.send_message(msg)
-        print(f"Email sent successfully to {email_receiver}")
+        print(f"Email sent successfully")
 except Exception as e:
     print(f"Failed to send email: {e}")

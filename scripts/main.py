@@ -15,7 +15,7 @@ def main():
     print(poem)
 
     if poem:
-        post_tweet(poem)
+        # post_tweet(poem)
         print("Tweet posted successfully!")
     else:
         print("Failed to generate a poem.")
